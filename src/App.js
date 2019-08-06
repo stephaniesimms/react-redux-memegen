@@ -32,7 +32,7 @@ class App extends Component {
             url={m.url}
             topText={m.topText}
             bottomText={m.bottomText}
-            delete={ this.deleteMeme(m.id) }
+            deleteMeme={() => this.deleteMeme(m.id) }
           />
         ))}
       </div>

@@ -18,11 +18,12 @@ class Meme extends Component {
     return (
       <div className="Meme">
         <div className="container">
-          <span className="Meme-topText">{topText}</span>
+          <p className="Meme-topText">{topText}</p>
           <img src={url} alt="meme" />
-          <span className="Meme-bottomText">{bottomText}</span>
+          <p className="Meme-bottomText">{bottomText}</p>
+          
           <button id="deleteBtn" onClick={this.handleDeleteMeme}>
-            DELETE
+            Delete
           </button>
         </div>
       </div>

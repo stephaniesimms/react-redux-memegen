@@ -29,32 +29,45 @@ class MemeForm extends Component {
       <div className="MemeForm">
         <h1>MemeMaker</h1>
         <p>Fill out the form to make instant memes!</p>
-        
+
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="url">Image URL</label>
-          <input
-            type="text"
-            name="url"
-            id="MemeForm-url"
-            onChange={this.handleChange}
-            value={this.state.url}
-          />
-          <label htmlFor="topText">Text on top</label>
-          <input
-            type="text"
-            name="topText"
-            id="MemeForm-topText"
-            onChange={this.handleChange}
-            value={this.state.topText}
-          />
-          <label htmlFor="bottomText">Text on bottom</label>
-          <input
-            type="text"
-            name="bottomText"
-            id="MemeForm-bottomText"
-            onChange={this.handleChange}
-            value={this.state.bottomText}
-          />
+
+          <div className="form-group">
+            <label htmlFor="url">Image URL</label>
+            <input
+              type="text"
+              name="url"
+              id="MemeForm-url"
+              className="form-control"
+              onChange={this.handleChange}
+              value={this.state.url}
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="topText">Text on top</label>
+            <input
+              type="text"
+              name="topText"
+              id="MemeForm-topText"
+              className="form-control"
+              onChange={this.handleChange}
+              value={this.state.topText}
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="bottomText">Text on bottom</label>
+            <input
+              type="text"
+              name="bottomText"
+              id="MemeForm-bottomText"
+              className="form-control"
+              onChange={this.handleChange}
+              value={this.state.bottomText}
+            />
+          </div>
+          
           <button type="submit" id="MemeForm-submit">
             Make meme
           </button>
